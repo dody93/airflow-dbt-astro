@@ -66,3 +66,21 @@ services:
     volumes:
       - ./dbt:/usr/local/airflow/dbt:rw
 ```
+
+Add the following code to the Dockerfile to run dbt in a python virtual environment and avoid dependency conflicts with Airflow
+
+```
+# install dbt into a venv to avoid package dependency conflicts
+WORKDIR "/usr/local/airflow"
+COPY dbt-requirements.txt ./
+RUN python -m virtualenv dbt_venv && source dbt_venv/bin/activate && \
+    pip install --no-cache-dir -r dbt-requirements.txt && deactivate
+```
+Create the file dbt-requirements.txt
+
+```
+dbt-core==1.3.1
+dbt-postgres==1.3.1
+```
+**Code**
+**Seeds**
