@@ -82,5 +82,6 @@ Create the file dbt-requirements.txt
 dbt-core==1.3.1
 dbt-postgres==1.3.1
 ```
-**Code**
+Code
+================
 **Seeds**
