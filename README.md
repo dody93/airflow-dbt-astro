@@ -6,13 +6,13 @@ Welcome to Astronomer! This project was generated after you ran 'astro dev init'
 Setup
 ================
 ```
-'astro dev init'
+astro dev init
 ```
 
 Install packages required for astronomer-cosmos's underlying packages
 
-'''
+```
 # packages.txt
 gcc
-python3-dev'
-'''
+python3-dev
+```
