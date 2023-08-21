@@ -17,4 +17,13 @@ gcc
 python3-dev
 ```
 In requirements.txt
-```astronomer-cosmos[dbt.all]```
+```
+astronomer-cosmos[dbt.all]
+```
+Using `dbt.all`will install all Cosmos, dbt, and all of the supported database types (postgres, bigquery, redshift, snowflake)
+Create a new folder dbt
+Clone the repo ‣ in it
+
+```
+git clone https://github.com/dbt-labs/jaffle_shop.git
+```
