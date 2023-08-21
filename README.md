@@ -16,3 +16,5 @@ Install packages required for astronomer-cosmos's underlying packages
 gcc
 python3-dev
 ```
+In requirements.txt
+```astronomer-cosmos[dbt.all]```
